@@ -23,6 +23,16 @@
 	unassume-unchanged = update-index --no-assume-unchanged
 	list-assume-unchanged = !sh -c 'git ls-files -v | grep "^[a-z]" | sed "s/^..//"'
 
+  # diff
+  d = diff                          # diff unstaged changes
+  dc = diff --cached                # diff staged changes
+  last = diff HEAD^                 # diff last committed change
+
+  # status
+  s = status                        # status
+  st = status                       # status
+  stat = status                     # status
+
 [color]
 	status = auto
 	diff = auto
@@ -41,4 +51,8 @@
 	# Enable HTTP(S) auth credential caching
 	# for 60 seconds (requires git 1.7.9+)
 	helper = cache --timeout 60
+
+[user]
+  email = lucidus21@gmail.com
+  name = lucidus21
 
