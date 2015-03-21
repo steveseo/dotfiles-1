@@ -8,7 +8,7 @@ Personal dotfiles for \*NIX systems.
 ### Clone and Install!
 
 ```bash
-git clone --recursive https://github.com/wookayin/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/lucidus21/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 python install.py
 ```
