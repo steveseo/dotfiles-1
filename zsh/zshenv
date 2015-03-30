@@ -90,3 +90,5 @@ export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python'
 # ensure that all new virtual environments are isolated from the system site-packages.
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
+# anaconda
+export PATH="/Users/shastaky/anaconda/bin:$PATH"

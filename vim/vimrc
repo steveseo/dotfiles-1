@@ -298,6 +298,7 @@ filetype indent on
 
 " Use spaces instead of tab in python codes
 au FileType python set expandtab
+au FileType tex set expandtab
 
 " filetype detections
 au BufRead,BufNewFile /etc/nginx/* if &ft == '' | setfiletype nginx | endif
@@ -310,7 +311,7 @@ fun! StripTrailingWhitespaces()
 	call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,java,javascript,html,ruby,python autocmd BufWritePre <buffer> :call StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,javascript,html,ruby,python,tex autocmd BufWritePre <buffer> :call StripTrailingWhitespaces()
 
 " highlight trailing whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red

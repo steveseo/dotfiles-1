@@ -51,3 +51,7 @@ alias awk7="awk '{print \$7}'"
 alias awk8="awk '{print \$8}'"
 alias awk9="awk '{print \$9}'"
 alias awklast="awk '{print \$\(NF\)}'"
+
+# etc..
+
+alias vi=/usr/local/bin/vim
