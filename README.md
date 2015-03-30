@@ -2,6 +2,7 @@ Dotfiles
 ========
 
 Personal dotfiles for \*NIX systems.
+This dotfiles are from @wookayin
 
 ## Installation
 
@@ -19,3 +20,9 @@ The installation script will create symbolic links for the specified dotfiles.
 
 This is a rough installation script written in python;
 the task definition lies on the top of the script file.
+
+### how to delete all .dotfiles
+
+```bash
+ls -al |xargs -0 | grep .dotfiles | awk9 | xargs rm -r
+```
