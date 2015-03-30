@@ -24,5 +24,10 @@ the task definition lies on the top of the script file.
 ### how to delete all .dotfiles
 
 ```bash
-ls -al |xargs -0 | grep .dotfiles | awk9 | xargs rm -r
+ls -al | grep .dotfiles | awk9 | xargs rm -r
 ```
+
+### additional resources
+
+- you may need to install zsh from your own package manger.(apt-get install zsh)
+- powerline font install: https://github.com/powerline/fonts
