@@ -85,10 +85,13 @@ fpath=(${ZDOTDIR:-$HOME}/.zsh/prezto-themes $fpath)
 # Python - Virtualenv
 
 # use system python for virtualenv commands.
-export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python'
+# export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python'
 
 # ensure that all new virtual environments are isolated from the system site-packages.
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
 # anaconda
 export PATH="/Users/shastaky/anaconda/bin:$PATH"
+
+# if use ko.KR linux
+export LC_ALL='ko_KR.UTF-8'
