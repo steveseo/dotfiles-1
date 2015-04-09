@@ -54,5 +54,4 @@ alias awklast="awk '{print \$\(NF\)}'"
 
 # etc..
 
-alias vi=/usr/local/bin/vim
 alias julia='/Applications/Julia-0.3.7.app/Contents/Resources/julia/bin/julia'
