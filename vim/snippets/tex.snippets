@@ -68,3 +68,19 @@ snippet figure
 		\caption{${2:Caption here}}
 		\label{fig:${3:figure1}}
 	\end{center} \end{figure}
+
+snippet subfigure
+	\begin{figure}[htb] \centering
+		\begin{subfigure}{.45\textwidth} \centering
+		  \includegraphics[width=0.9\linewidth]{${1:filename.png}}
+		  \caption{${2:Caption here}}
+		  \label{fig:${3:figure1}}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth} \centering
+		  \includegraphics[width=0.9\linewidth]{${4:filename.png}}
+		  \caption{${5:Caption here}}
+		  \label{fig:${6:figure1}}
+		\end{subfigure}
+	\caption{${7:Caption here}}
+	\label{fig:${8:Caption here}}
+	\end{figure}
