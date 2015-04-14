@@ -38,5 +38,6 @@ Plug 'briancollins/vim-jst'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'JuliaLang/julia-vim'
+Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 call plug#end()
