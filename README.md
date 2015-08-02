@@ -2,14 +2,14 @@ Dotfiles
 ========
 
 Personal dotfiles for \*NIX systems.
-This dotfiles are from @wookayin
+This dotfiles are from @wookayin, @lucidus21
 
 ## Installation
 
 ### Clone and Install!
 
 ```bash
-git clone --recursive https://github.com/lucidus21/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/HunjaeJung/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 python install.py
 ```
