@@ -1,6 +1,4 @@
-" @wookayin's vimrc file
-" https://dotfiles.wook.kr/vim/vimrc
-"
+" @hunjae's vimrc file
 " https://github.com/wookayin/dotfiles
 
 
@@ -19,7 +17,6 @@ endif
 """""""""""""""""""""""""""
 " 1. General Settings
 """""""""""""""""""""""""""
-
 syntax on
 set nocompatible
 
@@ -250,7 +247,6 @@ map  <leader>s] ysiw]
 map  <leader>s{ ysiw{
 map  <leader>s} ysiw}
 
-" }}}
 
 """""""""""""""""""""""""""""""""
 " 3. Colors, Highlight and Syntax
@@ -507,3 +503,21 @@ nnoremap <leader>T :TagbarToggle<CR>
 if filereadable(expand("\~/.vimrc.local"))
 	source \~/.vimrc.local
 endif
+
+
+" For pdb
+map <Leader>p :call InsertLine()<CR>
+
+function! InsertLine()
+  let trace = expand("import pdb; pdb.set_trace()")
+  execute "normal o".trace
+endfunction
+
+
+" Macro
+ab hunjae@ hunjae@ab180.co
+ab pdb@ import pdb; pdb.set_trace()
+ab div@ <div className=""></div>
+ia time@ <C-R>=strftime("%Y.%m.%d %H:%M:%S")<CR>
+ca ㅈ w
+ca ㅈㅂ wq

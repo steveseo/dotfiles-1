@@ -6,7 +6,7 @@
 	path = ~/.gitconfig_secret
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/hunjae/.gitignore_global
 	pager = less -F
 
 [alias]
@@ -53,5 +53,15 @@
 	helper = cache --timeout 60
 
 [user]
-  email = lucidus21@gmail.com
-  name = lucidus21
+	email = hunjaege@gmail.com
+	name = Hunjae Jung
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

@@ -14,7 +14,7 @@ if [[ `uname` == 'Darwin' ]]; then
 fi
 
 # history settings
-shopt -s histappend		# append, no overwrite
+shopt -s histappend # append, no overwrite
 HISTSIZE=10000
 HISTFILESIZE=20000
 
@@ -43,6 +43,17 @@ alias mv='mv -iv'
 # screens
 alias scr='screen -rD'
 
+# tmux
+alias tmuxl='tmux ls'
+alias tmuxn='tmux new-session -s'
+alias tmuxa='tmux attach -t'
+
+# git
+alias gpull='git pull upstream develop'
+alias gadd='git add .'
+alias gcomm='git commit -m'
+alias gpush='git push origin develop'
+alias vi='vim'
 
 ##################
 # 3. Color & PS1 #
