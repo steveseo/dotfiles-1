@@ -518,6 +518,8 @@ endfunction
 ab hunjae@ hunjae@ab180.co
 ab pdb@ import pdb; pdb.set_trace()
 ab div@ <div className=""></div>
+ab aut@ Author: Hunjae Jung
+ab date@ Date: <C-R>=strftime("%Y.%m.%d %H:%M:%S")<CR>
 ia time@ <C-R>=strftime("%Y.%m.%d %H:%M:%S")<CR>
 ca ㅈ w
 ca ㅈㅂ wq

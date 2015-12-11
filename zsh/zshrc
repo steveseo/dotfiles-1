@@ -20,3 +20,6 @@ if [[ -n "$TMUX" ]]; then
 else
   export TERM="xterm-256color"
 fi
+
+export NVM_DIR="/Users/hunjae/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

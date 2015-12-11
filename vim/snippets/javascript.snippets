@@ -225,8 +225,6 @@ snippet Dthen
 	${1:deferred}.then(${2:doneCallbacks}, ${3:failCallbacks}, ${4:progressCallbacks})
 snippet Dwhen
 	$.when(${1:deferreds})
-snippet data
-	${1:obj}.data(${2:obj})
 snippet dataa
 	$.data('${1:selector expression}', '${2:key}'${3:, 'value'})
 snippet dblclick
@@ -332,12 +330,6 @@ snippet hasd
 	$.hasData('${0:selector expression}');
 snippet height
 	${1:obj}.height(${2:integer})
-snippet hide
-	${1:obj}.hide('${2:slow/400/fast}')
-snippet hidec
-	${1:obj}.hide('${2:slow/400/fast}', function () {
-		${0:// callback}
-	});
 snippet hover
 	${1:obj}.hover(function (${2:e}) {
 		${3:// event handler}
@@ -551,12 +543,6 @@ snippet serialize
 	${1:obj}.serialize()
 snippet serializea
 	${1:obj}.serializeArray()
-snippet show
-	${1:obj}.show('${2:slow/400/fast}')
-snippet showc
-	${1:obj}.show('${2:slow/400/fast}', function () {
-		${0:// callback}
-	});
 snippet sib
 	${1:obj}.siblings('${2:selector expression}')
 snippet size
@@ -669,17 +655,15 @@ snippet gis
 snippet ism
 	isMounted()
 snippet jsx
-	/**
-	 * @jsx React.DOM
-	 */
-
 	var React = require('react');
 
 	var ${1:ClassName} = React.createClass({
 
 		render: function() {
 			return (
-				${0:<div />}
+				${0:<div className=''>
+				
+				</div>}
 			);
 		}
 
@@ -690,6 +674,10 @@ snippet pt
 	propTypes: {
 		${1}: React.PropTypes.${2:string}
 	},
+snippet ptn
+	${1}: React.PropTypes.${2:number}
+snippet pts
+	${1}: React.PropTypes.${2:string}
 snippet rcc
 	var ${1:ClassName} = React.createClass({
 
@@ -724,11 +712,13 @@ snippet scu
 		${1}
 	},
 snippet cm
-	${1:componentMethod}: function(){
+	${1:componentMethod}: function(${2}){
 		${0}
 	},
-snippet con
+snippet con'
 	console.log('${0}');
+snippet con
+	console.log(${0});
 snippet props
 	this.props.${1}
 snippet state
@@ -738,10 +728,11 @@ snippet trp
 snippet rreq
 	React = require('react');
 	ReactDom = require('react-dom');
-
-
+snippet req
+	var ${1} = require('${0}');
+snippet div
+	<div className="${1}">${0}</div>
 # ==================== Javascript ==================== #
-
 # prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} = function(${3}) {
@@ -1021,3 +1012,15 @@ snippet us
 # setTimeout function
 snippet timeout
 	setTimeout(function () {${0}}${2}, ${1:10});
+
+# comment
+snippet cmm
+	/* ===============================================
+		Date		: `system("date +%Y-%m-%d")`
+		Author		: Hunjae Jung
+		Description : ${0}
+	=================================================*/
+snippet cml
+	/* ===============================================
+	 *  ${0}
+	=================================================*/
